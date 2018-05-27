@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view tag="12" contentMode="scaleToFill" id="iN0-l3-epB" customClass="NoNetwork" customModule="MediaShare" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ms5-hV-hI5">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Can't Connect" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Msk-Vo-qjz">
+                            <rect key="frame" x="230" y="289" width="140" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="140" id="2jL-iZ-g91"/>
+                                <constraint firstAttribute="height" constant="21" id="Dqj-kK-4HB"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tap to Retry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sEA-fb-4do">
+                            <rect key="frame" x="266" y="318" width="86" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="Pl7-bG-7fP"/>
+                                <constraint firstAttribute="width" constant="86" id="S6N-j9-Q2w"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
+                            <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="refresh_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="gS5-yW-6q3">
+                            <rect key="frame" x="243" y="318" width="21" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="21" id="fQs-ja-48D"/>
+                                <constraint firstAttribute="height" constant="21" id="mRx-XC-RCA"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="offline_cloud.png" translatesAutoresizingMaskIntoConstraints="NO" id="Lif-gT-hKW">
+                            <rect key="frame" x="243" y="205" width="115" height="76"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="115" id="UWq-bO-miE"/>
+                                <constraint firstAttribute="height" constant="76" id="eAt-5S-qGe"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.98204703287272732" green="0.98204703287272732" blue="0.98204703287272732" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Msk-Vo-qjz" firstAttribute="centerX" secondItem="ms5-hV-hI5" secondAttribute="centerX" id="7Rh-sC-VVI"/>
+                        <constraint firstItem="sEA-fb-4do" firstAttribute="top" secondItem="Msk-Vo-qjz" secondAttribute="bottom" constant="8" id="Ate-M1-wvJ"/>
+                        <constraint firstItem="Msk-Vo-qjz" firstAttribute="top" secondItem="Lif-gT-hKW" secondAttribute="bottom" constant="8" id="DB1-iR-bOB"/>
+                        <constraint firstItem="sEA-fb-4do" firstAttribute="centerX" secondItem="ms5-hV-hI5" secondAttribute="centerX" constant="9" id="Vmv-fs-l0u"/>
+                        <constraint firstItem="Lif-gT-hKW" firstAttribute="centerX" secondItem="ms5-hV-hI5" secondAttribute="centerX" id="Yys-jD-7Sz"/>
+                        <constraint firstItem="gS5-yW-6q3" firstAttribute="top" secondItem="Msk-Vo-qjz" secondAttribute="bottom" constant="8" id="ce3-JH-8IW"/>
+                        <constraint firstItem="Msk-Vo-qjz" firstAttribute="centerY" secondItem="ms5-hV-hI5" secondAttribute="centerY" id="ofm-bg-cjz"/>
+                        <constraint firstItem="sEA-fb-4do" firstAttribute="leading" secondItem="gS5-yW-6q3" secondAttribute="trailing" constant="2" id="r8c-4y-PkI"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ms5-hV-hI5" secondAttribute="trailing" id="lF1-u9-JTr"/>
+                <constraint firstAttribute="bottom" secondItem="ms5-hV-hI5" secondAttribute="bottom" id="vzZ-GO-WbQ"/>
+                <constraint firstItem="ms5-hV-hI5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="xzo-IN-Xs4"/>
+                <constraint firstItem="ms5-hV-hI5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="zDG-ZB-rKP"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="offline_cloud.png" width="102" height="69"/>
+        <image name="refresh_icon.png" width="64" height="64"/>
+    </resources>
+</document>

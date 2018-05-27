@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TapToRetryView" customModule="WeatherRecordsInHourly" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="np6-1h-ZfN">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Can't Connect" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zqr-xF-igM">
+                            <rect key="frame" x="129" y="321" width="117.5" height="25"/>
+                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Retry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bqE-wR-YzJ">
+                            <rect key="frame" x="153.5" y="353.5" width="86" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="86" id="1ln-kR-fyR"/>
+                                <constraint firstAttribute="height" constant="21" id="GG7-yl-K4P"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
+                            <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="refresh_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="9Ie-e1-2mi">
+                            <rect key="frame" x="130.5" y="353.5" width="21" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="21" id="SxW-rY-KTz"/>
+                                <constraint firstAttribute="height" constant="21" id="XSn-hd-4M4"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="offline_cloud.png" translatesAutoresizingMaskIntoConstraints="NO" id="1CO-Sn-2uW">
+                            <rect key="frame" x="130.5" y="236.5" width="115" height="76"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="76" id="KO8-Yw-stb"/>
+                                <constraint firstAttribute="width" constant="115" id="q1c-re-FcO"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.98204703289999995" green="0.98204703289999995" blue="0.98204703289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="1CO-Sn-2uW" firstAttribute="centerX" secondItem="np6-1h-ZfN" secondAttribute="centerX" id="42m-hK-HuS"/>
+                        <constraint firstItem="zqr-xF-igM" firstAttribute="centerY" secondItem="np6-1h-ZfN" secondAttribute="centerY" id="Brn-AZ-MBB"/>
+                        <constraint firstItem="bqE-wR-YzJ" firstAttribute="centerX" secondItem="np6-1h-ZfN" secondAttribute="centerX" constant="9" id="NJ2-Aa-6BT"/>
+                        <constraint firstItem="zqr-xF-igM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="np6-1h-ZfN" secondAttribute="leading" constant="16" id="OFS-0Y-x3F"/>
+                        <constraint firstItem="9Ie-e1-2mi" firstAttribute="top" secondItem="zqr-xF-igM" secondAttribute="bottom" constant="8" id="Pdp-cH-FUa"/>
+                        <constraint firstItem="bqE-wR-YzJ" firstAttribute="top" secondItem="zqr-xF-igM" secondAttribute="bottom" constant="8" id="Vgy-06-O2Q"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="zqr-xF-igM" secondAttribute="trailing" constant="16" id="Zxk-0C-wAe"/>
+                        <constraint firstItem="bqE-wR-YzJ" firstAttribute="leading" secondItem="9Ie-e1-2mi" secondAttribute="trailing" constant="2" id="nMp-nO-tuL"/>
+                        <constraint firstItem="zqr-xF-igM" firstAttribute="centerX" secondItem="np6-1h-ZfN" secondAttribute="centerX" id="qHQ-fE-c3l"/>
+                        <constraint firstItem="zqr-xF-igM" firstAttribute="top" secondItem="1CO-Sn-2uW" secondAttribute="bottom" constant="8" id="zHc-UL-Npz"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="np6-1h-ZfN" secondAttribute="bottom" id="Ehu-sd-Xzq"/>
+                <constraint firstItem="np6-1h-ZfN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="PZ5-xL-R7C"/>
+                <constraint firstItem="np6-1h-ZfN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="nR9-vl-CWG"/>
+                <constraint firstAttribute="trailing" secondItem="np6-1h-ZfN" secondAttribute="trailing" id="sdQ-Ck-4Q5"/>
+            </constraints>
+            <connections>
+                <outlet property="lblMessage" destination="zqr-xF-igM" id="SCT-CG-Ru0"/>
+            </connections>
+            <point key="canvasLocation" x="34.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="offline_cloud.png" width="102" height="69"/>
+        <image name="refresh_icon.png" width="64" height="64"/>
+    </resources>
+</document>
